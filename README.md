@@ -2,6 +2,8 @@
 
 A tiny, free MacOS app that snaps your windows to halves, quarters, thirds or full screen with simple shortcuts. No dependencies or network access. 
 
+![WindowSnap demo](docs/demo.gif)
+
 ## Default shortcuts
 
 All use **⌃⌥** (Control + Option).
