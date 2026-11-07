@@ -19,6 +19,10 @@ All use **⌃⌥** (Control + Option).
 
 Click on the menu bar icon to switch any of these defaults.
 
+## Download
+
+Get `WindowSnap-<version>.zip` from the [Releases page](https://github.com/jorgegalician/WindowSnap/releases), unzip it and move `WindowSnap.app` to `/Applications`. The first launch needs right-click → **Open** (see below).
+
 ## Requirements
 
 macOS 11 or later.
