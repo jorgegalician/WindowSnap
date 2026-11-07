@@ -21,7 +21,7 @@ Click on the menu bar icon to switch any of these defaults.
 
 ## Download
 
-Get `WindowSnap-<version>.zip` from the [Releases page](https://github.com/jorgegalician/WindowSnap/releases), unzip it and move `WindowSnap.app` to `/Applications`. The first launch needs right-click → **Open** (see below).
+Get `WindowSnap-<version>.zip` from the [Releases page](https://github.com/jorgegalician/WindowSnap/releases), unzip it and move `WindowSnap.app` to `/Applications`. The first launch needs extra approval because the app is not notarized (see below).
 
 ## Requirements
 
@@ -33,7 +33,15 @@ WindowSnap moves other apps' windows, so macOS requires **System Settings → Pr
 
 The app is signed ad hoc (no developer certificate), so macOS treats every rebuild as a new app. If shortcuts stop working after you rebuild, remove WindowSnap from the Accessibility list with the − button, then add it again. Toggling the switch is not enough.
 
-Because it is not notarized, a downloaded copy may need right-click → Open the first time.
+## Not notarized
+
+WindowSnap is not notarized by Apple, so macOS may block it the first time you open it ("WindowSnap can't be opened" or "Apple could not verify..."). To allow it:
+
+1. Try to open the app once, then dismiss the warning.
+2. Go to **System Settings → Privacy & Security**, scroll down to the Security section, and click **Open Anyway** next to the WindowSnap message.
+3. Confirm, and enter your password if asked.
+
+Alternatively, right-click the app and choose **Open**.
 
 ---
 
