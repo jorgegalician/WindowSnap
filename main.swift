@@ -223,11 +223,7 @@ final class Delegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 
     func refresh() { statusItem.menu = buildMenu() }
 
-    func applicationDockMenu(_ sender: NSApplication) -> NSMenu? { buildMenu() }
     func applicationShouldTerminateAfterLastWindowClosed(_ s: NSApplication) -> Bool { false }
-    func applicationShouldHandleReopen(_ s: NSApplication, hasVisibleWindows: Bool) -> Bool {
-        statusItem.button?.performClick(nil); return false
-    }
 
     @objc func resetAll() {
         defaults.removeObject(forKey: "shortcuts"); loadShortcuts(); registerHotKeys(); refresh()
@@ -283,5 +279,5 @@ final class Delegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 let app = NSApplication.shared
 let delegate = Delegate()
 app.delegate = delegate
-app.setActivationPolicy(.regular)
+app.setActivationPolicy(.accessory)
 app.run()
